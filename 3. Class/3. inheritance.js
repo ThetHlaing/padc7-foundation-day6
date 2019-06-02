@@ -12,6 +12,16 @@
       }
     }
 
+    class Dog extends Animal{
+      constructor(name){
+        super(name);
+      }
+
+      speak(){
+        console.log(`child's function speak`);
+      }
+    }
+
 
     let d = new Dog('Mitzie');    
     d.speak(); //This function should return the result of both parent and child functions

@@ -40,18 +40,27 @@
   </ul>
   <script>
     class Dog {
-      static display() {
+
+      constructor(name,url) {
+        this.name = name;
+        this.url = url;
+      }
+
+      display() {
         return `
           <div>
-              <img src=""/>
-              <div></div>
+              <img src="${this.url}"/>
+              <div>${this.name}</div>
           </div>
         `
       }
     }
 
     //create dog objects
-
+    const doga = new Dog("Yan Lone",'https://images-na.ssl-images-amazon.com/images/I/71lcrFQT%2BvL.jpg');
+    document.querySelector("#dog-breed li:first-child").innerHTML = doga.display();
+    document.querySelector("#dog-breed li:nth-child(2)").innerHTML = doga.display();
+    document.querySelector("#dog-breed li:nth-child(3)").innerHTML = doga.display();
 
     //select li and insert returned html as object
   </script>

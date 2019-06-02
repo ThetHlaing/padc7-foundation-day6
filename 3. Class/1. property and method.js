@@ -2,7 +2,7 @@
     // Add leg Property and sleep method
 
     class Animal {
-
+      
       constructor(name) {
         this.name = name;             
 
@@ -14,3 +14,5 @@
     }
    
     let a = new Animal('Mitzie');    
+    console.log(a.name);
+    a.speak();

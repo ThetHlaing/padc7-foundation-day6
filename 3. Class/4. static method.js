@@ -20,5 +20,11 @@
         console.log(`${this.name} bark`);
       }
 
+      static somemethod(){
+        console.log("Static method trigger");
+      }
+
     }  
     
+
+    Dog.somemethod();

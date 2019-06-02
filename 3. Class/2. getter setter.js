@@ -7,8 +7,27 @@
         this.name = name;             
         this.food = 'nothing';
       }      
+
+      set breakfast(value){
+        this.food = value;
+      }
+
+      get breakfast(){
+        return "Previously eaten " + this.food;
+      }
+
+      set dinner(value){
+        this.food = value;
+      }
+
+      get dinner(){
+        return "Dinner was " + this.food;
+      }
+
     }
    
     let a = new Animal('Mitzie');     
     a.breakfast = 'Cake';
     console.log(a.breakfast);
+    a.dinner = "Stake";
+    console.log(a.dinner);
